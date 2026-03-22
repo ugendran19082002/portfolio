@@ -90,10 +90,14 @@ export function CustomCursor() {
           height: isHovering ? 60 : 36,
         }}
         animate={{
-          backgroundColor: isHovering ? 'rgba(96, 165, 250, 0.1)' : 'transparent',
-          borderColor: isHovering ? 'rgba(168, 85, 247, 0.8)' : 'rgba(96, 165, 250, 0.5)',
+          backgroundColor: isHovering ? 'rgba(96, 165, 250, 0.1)' : 'rgba(0, 0, 0, 0)',
+          border: isHovering ? '1px solid rgba(96, 165, 250, 0.5)' : '1px solid rgba(147, 51, 234, 0.5)',
         }}
-        transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+        transition={{
+          type: 'tween',
+          ease: 'backOut',
+          duration: 0.15,
+        }}
       >
         {isHovering && (
           <motion.div 
