@@ -98,7 +98,10 @@ export function Hero() {
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
               </a>
               <a
-                href="#"
+                href="/assets/pdf/Ugendran_S.pdf"
+                download="Ugendran_S_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg text-white font-semibold hover:bg-white/10 hover:border-purple-500/50 transition-all duration-300 flex items-center gap-2 w-full sm:w-auto justify-center"
               >
                 <Download size={20} />
